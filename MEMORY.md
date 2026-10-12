@@ -1,0 +1,2 @@
+- 2026-10-12 · Phạm vi vòng đầu đã chốt: 0 màn (spec không bàn màn hình — để buổi thiết kế giao diện), 14 việc làm được (F1–F14 trong `docs/2-spec/spec.md`).
+- 2026-10-12 · Dựng folder project và nạp skill `brainstorm`.
