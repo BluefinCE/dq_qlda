@@ -2,7 +2,7 @@
 
 ## 1. Dự án này là gì
 
-**QLDA (Quản lý dự án)** là web app **nội bộ** của công ty tư vấn thiết kế cầu đường / hạ tầng kỹ thuật, quản lý luồng thông tin và **thủ tục hồ sơ pháp lý** của các dự án đầu tư công mà công ty tư vấn cho chủ đầu tư nhà nước.
+**dq-project** (quản lý dự án) là web app **nội bộ** của công ty tư vấn thiết kế cầu đường / hạ tầng kỹ thuật, quản lý luồng thông tin và **thủ tục hồ sơ pháp lý** của các dự án đầu tư công mà công ty tư vấn cho chủ đầu tư nhà nước.
 
 **Đã xác nhận (đang brainstorm, chưa có spec):**
 *   **Who**: nhân sự nội bộ công ty (8 người → mục tiêu 30). Cần một góc nhìn **tổng quan cho chủ đầu tư** (không đi chi tiết).

@@ -1,8 +1,8 @@
-# App QLDA — Spec
+# dq-project — Spec
 
 ## 1. Bối cảnh & vấn đề
 
-> App QLDA giúp **nhân sự công ty tư vấn thiết kế** theo dõi mọi **văn bản đến, văn bản đi và thủ tục pháp lý của từng dự án** ở một chỗ, mà hiện nay đang **nằm rải rác trên Zalo cá nhân, không vào sổ, không đánh số**.
+> dq-project giúp **nhân sự công ty tư vấn thiết kế** theo dõi mọi **văn bản đến, văn bản đi và thủ tục pháp lý của từng dự án** ở một chỗ, mà hiện nay đang **nằm rải rác trên Zalo cá nhân, không vào sổ, không đánh số**.
 
 **Hiện nay:** công văn nhận qua Zalo của từng thành viên; sếp giao việc qua Zalo; chưa có quy trình phát hành công văn đi; hồ sơ thiết kế lưu trên NAS. Công ty tư vấn cho chủ đầu tư (CĐT) nhà nước — nhiều chuyên viên CĐT cần được tư vấn về thủ tục.
 **Chỗ đau nhất:** *"Khâu làm việc pháp lý với các cơ quan dễ bị chậm trễ nhất."* · *"Các văn bản thu thập từ nhiều cơ quan và CĐT nhiều lần có thể rất dễ bị lạc mất, và biên bản bàn giao hồ sơ, biên bản hiện trường."* · Giai đoạn thi công *"rất nhiều văn bản công văn được nhận và phát đi nên rất dễ bị thất lạc."*

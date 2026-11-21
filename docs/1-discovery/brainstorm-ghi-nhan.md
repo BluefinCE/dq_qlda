@@ -1,4 +1,4 @@
-# Ghi nhận brainstorm — app QLDA
+# Ghi nhận brainstorm — dq-project
 
 > Cập nhật: 2026-10-12. Chỉ ghi điều **đã xác nhận**; giả định và câu hỏi mở tách riêng ở cuối.
 
