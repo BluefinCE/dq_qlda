@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+/* DQHPC — lớp component. Tiền tố dq-. Mọi giá trị lấy từ token (tokens.css). */
+
+body { margin: 0; font-family: var(--font-sans); background: var(--background); color: var(--foreground); font-size: 12px; font-weight: 500; -webkit-font-smoothing: antialiased; }
+.dq-stage { padding: var(--space-lg); display: flex; flex-wrap: wrap; gap: var(--space-md); align-items: center; }
+.dq-stage-col { padding: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-md); }
+
+/* ---------- Button ---------- */
+.dq-btn { font: inherit; font-size: 14px; font-weight: 500; line-height: 20px; height: 36px; padding: 0 var(--space-lg); display: inline-flex; align-items: center; gap: var(--space-xxs); border-radius: var(--radius-md); border: 1px solid transparent; background: transparent; color: var(--foreground); cursor: pointer; transition: color .15s, background-color .15s, border-color .15s, box-shadow .15s; white-space: nowrap; }
+.dq-btn:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--ring); }
+.dq-btn svg { width: 16px; height: 16px; }
+.dq-btn-primary { background: var(--primary); color: var(--primary-foreground); }
+.dq-btn-primary:hover { background: var(--primary-hover); }
+.dq-btn-secondary { background: var(--muted); color: var(--foreground); }
+.dq-btn-secondary:hover { background: var(--border); }
+.dq-btn-outline { background: var(--background); border-color: var(--input); }
+.dq-btn-outline:hover { background: var(--accent); }
+.dq-btn-ghost:hover { background: var(--accent); }
+.dq-btn-destructive { background: transparent; border-color: var(--destructive); color: var(--destructive); }
+.dq-btn-destructive:hover { background: var(--accent); }
+.dq-btn-xs { height: 28px; padding: 0 var(--space-sm); font-size: 12px; }
+.dq-btn-sm { height: 32px; padding: 0 var(--space-md); font-size: 12px; }
+.dq-btn-lg { height: 40px; padding: 0 var(--space-xxl); }
+.dq-btn-icon { width: 36px; padding: 0; justify-content: center; border-radius: var(--radius-full); }
+
+/* ---------- Status dot ---------- */
+.dq-dot { display: inline-block; width: 6px; height: 6px; border-radius: var(--radius-full); flex: none; }
+.dq-dot-backlog { background: var(--status-backlog); }
+.dq-dot-todo { background: var(--status-todo); }
+.dq-dot-in-progress { background: var(--status-in-progress); }
+.dq-dot-blocked { background: var(--status-blocked); }
+.dq-dot-in-review { background: var(--status-in-review); }
+.dq-dot-done { background: var(--status-done); }
+.dq-dot-canceled { background: var(--status-canceled); }
+.dq-status { display: inline-flex; align-items: center; gap: var(--space-xs); font-size: 12px; color: var(--muted-foreground); }
+
+/* ---------- Label chip ---------- */
+.dq-chip { display: inline-flex; align-items: center; gap: var(--space-xs); padding: 2px 10px; border: 1px solid var(--border); border-radius: var(--radius-full); font-size: 12px; line-height: 16px; font-weight: 500; color: var(--foreground); background: var(--container); }
+.dq-chip-urgent .dq-dot { background: var(--label-urgent); }
+.dq-chip-important .dq-dot { background: var(--label-important); }
+.dq-chip-normal .dq-dot { background: var(--label-normal); }
+.dq-chip-whenever .dq-dot { background: var(--label-whenever); }
+.dq-count { display: inline-flex; align-items: center; justify-content: center; min-width: 24px; height: 24px; padding: 0 6px; box-sizing: border-box; border-radius: var(--radius-full); background: var(--muted); font-size: 12px; font-weight: 600; color: var(--foreground); }
+
+/* ---------- Input ---------- */
+.dq-field { display: flex; flex-direction: column; gap: var(--space-xs); min-width: 240px; }
+.dq-field label { font-size: 12px; font-weight: 500; color: var(--foreground); }
+.dq-input { font: inherit; font-size: 14px; height: 36px; padding: 4px var(--space-md); box-sizing: border-box; border: 1px solid var(--input); border-radius: var(--radius-md); background: transparent; color: var(--foreground); transition: border-color .15s, box-shadow .15s; }
+.dq-input::placeholder { color: var(--muted-foreground); }
+.dq-input:focus, .dq-input.is-focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--ring); }
+
+/* ---------- Dashboard panel ---------- */
+.dq-panel { background: var(--container); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: var(--space-xl); display: flex; flex-direction: column; gap: var(--space-md); }
+.dq-panel-head { display: flex; align-items: center; gap: 10px; }
+.dq-tile { width: 28px; height: 28px; border-radius: var(--radius-md); background: var(--muted); display: inline-flex; align-items: center; justify-content: center; flex: none; color: var(--foreground); }
+.dq-tile svg { width: 16px; height: 16px; }
+.dq-panel-title { font-size: 20px; line-height: 26px; font-weight: 700; letter-spacing: -0.01em; margin: 0; }
+.dq-panel-sub { font-size: 20px; line-height: 26px; font-weight: 300; color: var(--muted-foreground); }
+.dq-panel-head .dq-count { margin-left: auto; }
+
+/* ---------- Task card ---------- */
+.dq-task { background: var(--background); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-lg); display: flex; gap: var(--space-md); align-items: flex-start; transition: background-color .15s; }
+.dq-task:hover { background: color-mix(in srgb, var(--accent) 40%, var(--background)); }
+.dq-task-icon { width: 44px; height: 44px; border-radius: var(--radius-lg); flex: none; display: inline-flex; align-items: center; justify-content: center; color: var(--foreground); }
+.dq-task-icon svg { width: 20px; height: 20px; }
+.dq-task-body { display: flex; flex-direction: column; gap: var(--space-xxs); min-width: 0; flex: 1; }
+.dq-task-title { font-size: 14px; line-height: 20px; font-weight: 600; margin: 0; }
+.dq-task-meta { display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap; font-size: 12px; color: var(--muted-foreground); }
+.dq-task-overdue { border-color: var(--overdue-border); animation: dq-pulse 5s cubic-bezier(0.4,0,0.6,1) infinite; }
+@keyframes dq-pulse { 0% { box-shadow: 0 0 0 0 var(--overdue-ring); } 30% { box-shadow: 0 0 0 4px transparent; } 36%, 100% { box-shadow: 0 0 0 0 transparent; } }
+@media (prefers-reduced-motion: reduce) { .dq-task-overdue { animation: none; box-shadow: 0 0 0 3px var(--overdue-border); } }
+.dq-bg-sky { background: var(--schedule-sky); }
+.dq-bg-violet { background: var(--schedule-violet); }
+.dq-bg-amber { background: var(--schedule-amber); }
+.dq-bg-pink { background: var(--schedule-pink); }
+.dq-bg-emerald { background: var(--schedule-emerald); }
+
+/* ---------- Issue row ---------- */
+.dq-list { display: flex; flex-direction: column; }
+.dq-row { height: 44px; padding: 0 var(--space-xxl); display: flex; align-items: center; gap: var(--space-md); font-size: 14px; font-weight: 600; cursor: pointer; }
+.dq-row:hover { background: color-mix(in srgb, var(--sidebar) 50%, transparent); }
+.dq-row.is-selected { background: var(--primary-soft); }
+.dq-row-id { font-size: 12px; font-weight: 500; color: var(--muted-foreground); width: 64px; flex: none; }
+.dq-row-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dq-row-date { font-size: 12px; font-weight: 500; color: var(--muted-foreground); }
+
+/* ---------- Page header ---------- */
+.dq-header { height: 40px; box-sizing: border-box; padding: 6px var(--space-xxl); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: var(--space-sm); background: var(--background); }
+.dq-header-app { font-size: 22px; line-height: 28px; font-weight: 700; letter-spacing: -0.02em; }
+.dq-header-bar { width: 2px; height: 20px; background: var(--primary); border-radius: var(--radius-hairline); }
+.dq-header-page { font-size: 19px; line-height: 24px; font-weight: 300; color: var(--muted-foreground); }
+.dq-header-actions { margin-left: auto; display: flex; gap: var(--space-sm); }
+
+/* ---------- Sidebar ---------- */
+.dq-sidebar { width: 248px; box-sizing: border-box; background: var(--sidebar); border-right: 1px solid var(--border); padding: var(--space-md) var(--space-sm); display: flex; flex-direction: column; gap: 2px; }
+.dq-brand { display: flex; flex-direction: column; padding: var(--space-xxs) var(--space-sm) var(--space-md); }
+.dq-brand-name { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; }
+.dq-brand-eyebrow { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted-foreground); }
+.dq-nav { position: relative; height: 32px; padding: 0 var(--space-sm); display: flex; align-items: center; gap: var(--space-sm); border-radius: var(--radius-md); font-size: 14px; font-weight: 500; color: var(--foreground); text-decoration: none; }
+.dq-nav svg { width: 16px; height: 16px; color: var(--muted-foreground); }
+.dq-nav:hover { background: var(--accent); }
+.dq-nav.is-active { background: var(--primary-soft); color: var(--primary-text); font-weight: 600; }
+.dq-nav.is-active svg { color: var(--primary-text); }
+.dq-nav.is-active::before { content: ""; position: absolute; left: -8px; top: 8px; bottom: 8px; width: 2px; border-radius: var(--radius-hairline); background: var(--primary); }
+.dq-nav .dq-count { margin-left: auto; height: 20px; min-width: 20px; font-size: 11px; }
+.dq-nav-group { font-size: 11px; font-weight: 600; color: var(--muted-foreground); padding: var(--space-md) var(--space-sm) var(--space-xxs); }
+
+/* ---------- Popover ---------- */
+.dq-popover { background: var(--popover); border: 1px solid var(--border); border-radius: var(--radius-md); box-shadow: var(--shadow-overlay); padding: var(--space-xxs); min-width: 200px; }
+.dq-menu-item { height: 32px; padding: 0 var(--space-sm); display: flex; align-items: center; gap: var(--space-sm); border-radius: var(--radius-sm); font-size: 14px; }
+.dq-menu-item:hover, .dq-menu-item.is-hover { background: var(--accent); }
+.dq-menu-sep { height: 1px; background: var(--border); margin: var(--space-xxs) 0; }
+.dq-menu-danger { color: var(--destructive); }
